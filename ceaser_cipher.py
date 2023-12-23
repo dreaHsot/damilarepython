@@ -8,13 +8,13 @@ def encrypt(word, key):
     encrypt_list = []
 
     for i in word:
-        if i != ' ':
+        if i in letters:
             for j, k in enumerate(letters):
                 if i == k:
                     new_p = (j + key) % 26
                     encrypt_list.append(letters[new_p])
         else:
-            encrypt_list.append(' ')
+            encrypt_list.append(i)
     
     print_list(encrypt_list)
 
@@ -23,13 +23,13 @@ def decrypt(word, key):
     decrypt_list = []
 
     for i in word:
-        if i != ' ':
+        if i in letters:
             for j, k in enumerate(letters):
                 if i == k:
                     new_p = (j - key) % 26
                     decrypt_list.append(letters[new_p])
         else:
-            decrypt_list.append(' ')
+            decrypt_list.append(i)
 
     print_list(decrypt_list)
 
