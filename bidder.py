@@ -2,6 +2,7 @@ import os
 
 os.system('clear')
 print("*****WELCOME TO THE SILENT BIDDING PROGRAM*****\n")
+
 def max_bid(bids):
     m_value = 0
     highest_values = dict()
@@ -15,7 +16,7 @@ def max_bid(bids):
             highest_values[i] = j
 
     if len(highest_values) == 1:
-        print(f"The highest bidder is {m_key} at {m_value}")
+        print(f"The highest bidder is {m_key} at {m_value}\n")
     else:
         print("There are multiple highest bidders: ")
 
@@ -23,13 +24,14 @@ def max_bid(bids):
         for i in highest_values:
             print(i)
 
-        print("\nLet's have another round of bid for the top bidders")
+        print("\nRun the program again to have another round of bid for the top bidders\n")
 
 bids = dict()
 
 again = True
 
 while again:
+    print("*****WELCOME TO THE SILENT BIDDING PROGRAM*****\n")
     key = input("What is the name?: ")
     value = int(input("What is your bid?: "))
 
