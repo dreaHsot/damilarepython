@@ -22,14 +22,16 @@ dest = random.randint(1, 100)
 
 while lifeline > 0:
     if guess == dest:
-        print("\n\nCongratulations, that's correct!!\n")
+        print(f"\n\nCongratulations, that's correct!! {dest}\n")
         break
     elif guess < dest:
-        guess = int(input("\ntoo low, try again: "))
+        guess = int(input("too low, try again: "))
         lifeline -= 1
+        print(f"\nYou have {lifeline} attempts left")
     else:
-        guess = int(input("\ntoo high, try again: "))
+        guess = int(input("too high, try again: "))
         lifeline -= 1
+        print(f"\nYou have {lifeline} attempts left")
 
-if lifeline == 0:
+if lifeline == 0 and guess != dest:
     print(f"\nWRONG!!! GAME OVER\nCorrect guess is {dest}\n")
