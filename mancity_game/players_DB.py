@@ -4,13 +4,31 @@ player_data = [
             "name": "Scott Carson",
             "Jersey Number": 33,
             "nationality": "England",
-            "position": "goal keeper"
+            "position": "goalkeeper"
         },
         {
             "name": "Ederson",
             "Jersey Number": 31,
             "country": "Brazil",
-            "position": "goal keeper"
+            "position": "goalkeeper"
+        },
+        {
+            "name": "True Grant",
+            "Jersey Number": 88,
+            "country": "England",
+            "position": "goalkeeper"
+        },
+        {
+            "name": "Stefan Ortega",
+            "Jersey Number": 18,
+            "country": "Germany",
+            "position": "goalkeeper"
+        },
+        {
+            "name": "Zack Steffen",
+            "Jersey Number": 13,
+            "country": "USA",
+            "position": "goalkeeper"
         },
         {
             "name": "Manuel Akanji",
@@ -19,9 +37,81 @@ player_data = [
             "position": "defender"
         },
         {
+            "name": "Nathan Ake",
+            "Jersey Number": 6,
+            "country": "Netherlands",
+            "position": "defender"
+        },
+        {
+            "name": "Max Alleyne",
+            "Jersey Number": 68,
+            "country": "England",
+            "position": "defender"
+        },
+        {
+            "name": "Josko Gvardiol",
+            "Jersey Number": 24,
+            "country": "Croatia",
+            "position": "defender"
+        },
+        {
+            "name": "Rico Lewis",
+            "Jersey Number": 82,
+            "country": "England",
+            "position": "defender/midfielder"
+        },
+        {
+            "name": "Ruben Dias",
+            "Jersey Number": 3,
+            "country": "Portugal",
+            "position": "defender"
+        },
+        {
+            "name": "Sergio Gomez",
+            "Jersey Number": 21,
+            "country": "Spain",
+            "position": "defender/midfielder"
+        },
+        {
+            "name": "John stones",
+            "Jersey Number": 5,
+            "country": "England",
+            "position": "defender"
+        },
+        {
+            "name": "Kyle Walker",
+            "Jersey Number": 2,
+            "country": "England",
+            "position": "defender"
+        },
+        {
             "name": "Bernardo Silva",
             "Jersey Number": 20,
             "country": "Portugal",
+            "position": "midfielder"
+        },
+        {
+            "name": "Oscar Bobb",
+            "Jersey Number": 52,
+            "country": "Norway",
+            "position": "midfielder"
+        },
+        {
+            "name": "Kevin De Bruyne",
+            "Jersey Number": 17,
+            "country": "Belgium",
+            "position": "midfielder"
+        },
+        {
+            "name": "Phil Foden",
+            "Jersey Number": 47,
+            "country": "England",
+            "position": "midfielder"
+        },
+        {
+            "name": "Jack Grealish",
+            "Jersey Number": 10,
+            "country": "England",
             "position": "midfielder"
         },
         {
