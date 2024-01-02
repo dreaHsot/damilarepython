@@ -5,6 +5,7 @@ import random
 
 os.system('clear')
 
+print(game_art.manchester_city)
 continue_flag = True
 p_point = 0
 
@@ -16,9 +17,9 @@ while continue_flag:
     B = player2["name"]
 
     Aposition = player1["position"]
-    Bposition = player2["bposition"]
+    Bposition = player2["position"]
 
-    print(f"whose jersey number is greater?\n\nA:{A} ({Aposition})\nOR\nB:{B} ({Bposition})\n")
+    print(f"whose jersey number is greater?\n\nA:{A} ({Aposition})\n{game_art.vs}\nB:{B} ({Bposition})\n")
     
     if player1["Jersey Number"] > player2["Jersey Number"]:
         answer = 'A'
@@ -33,6 +34,3 @@ while continue_flag:
     else:
         print(f"wrong!!! GAME OVER\n\nYou have {p_point} points\n")
         continue_flag = False
-
-
-
