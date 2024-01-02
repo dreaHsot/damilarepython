@@ -15,7 +15,10 @@ while continue_flag:
     A = player1["name"]
     B = player2["name"]
 
-    print(f"whose jersey number is greater?\n\nA:{A}\nOR\nB:{B}\n")
+    Aposition = player1["position"]
+    Bposition = player2["bposition"]
+
+    print(f"whose jersey number is greater?\n\nA:{A} ({Aposition})\nOR\nB:{B} ({Bposition})\n")
     
     if player1["Jersey Number"] > player2["Jersey Number"]:
         answer = 'A'
@@ -28,7 +31,7 @@ while continue_flag:
         p_point += 1
         print(f"That's correct; you have {p_point} points\n\n")
     else:
-        print(f"That's wrong; you have {p_point} points\nGAME OVER!!")
+        print(f"wrong!!! GAME OVER\n\nYou have {p_point} points\n")
         continue_flag = False
 
 

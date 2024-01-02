@@ -115,9 +115,57 @@ player_data = [
             "position": "midfielder"
         },
         {
+            "name": "Micah Hamilton",
+            "Jersey Number": 92,
+            "country": "England",
+            "position": "midfielder"
+        },
+        {
+            "name": "Mateo Kovacic",
+            "Jersey Number": 8,
+            "country": "Croatia",
+            "position": "midfielder"
+        },
+        {
+            "name": "Matheus Nunes",
+            "Jersey Number": 27,
+            "country": "Portugal",
+            "position": "midfielder"
+        },
+        {
+            "name": "Kalvin Phillips",
+            "Jersey Number": 4,
+            "country": "England",
+            "position": "midfielder"
+        },
+        {
+            "name": "Rodri",
+            "Jersey Number": 16,
+            "country": "Spain",
+            "position": "midfielder"
+        },
+        {
+            "name": "Mahamadou Susoho",
+            "Jersey Number": 76,
+            "country": "Spain",
+            "position": "midfielder"
+        },
+        {
             "name": "Julian Alvarez",
             "Jersey Number": 19,
             "country": "Argentina",
+            "position": "forward"
+        },
+        {
+            "name": "Jeremy Doku",
+            "Jersey Number": 11,
+            "country": "Belgium",
+            "position": "forward"
+        },
+        {
+            "name": "Erling Haaland",
+            "Jersey Number": 9,
+            "country": "Norway",
             "position": "forward"
         }
 ]
