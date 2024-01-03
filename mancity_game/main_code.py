@@ -3,6 +3,8 @@ import players_DB
 import game_art
 import random
 
+os.system('clear')
+
 print(game_art.manchester_city)
 continue_flag = True
 p_point = 0
@@ -26,8 +28,6 @@ def jersey_number_compare():
     else:
         print(f"wrong!!! GAME OVER\n\nFINAL SCORE = {p_point} points\n")
         continue_flag = False
-
-os.system('clear')
 
 while continue_flag:
     player1 = random.choice(players_DB.player_data)
