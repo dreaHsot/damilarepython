@@ -3,7 +3,7 @@ player_data = [
         {
             "name": "Scott Carson",
             "Jersey Number": 33,
-            "nationality": "England",
+            "country": "England",
             "position": "goalkeeper"
         },
         {
