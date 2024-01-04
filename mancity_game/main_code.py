@@ -9,6 +9,33 @@ print(game_art.manchester_city)
 continue_flag = True
 p_point = 0
 
+game_type = input("Select gametype;\n\n enter 1 for nationality version or 2 for jersey number compare")
+
+def nationality():
+    global p_point
+    global continue_flag
+    global player1
+
+    print("Input the country the players represent in the space provided\n(enter a correct spelling)")
+
+    p_answer = input(f"{Aname} ").title()
+
+    '''if Aname not in country_players:
+        country_players["Aname"] = 1
+    else:
+        country_players["Aname"] += 1
+
+    while country_players["Aname"] < 3:'''
+    if p_answer == player1["country"]:
+        p_point += 1
+        print(f"That's correct\n\n")
+    else:
+        print(f"wrong!!! GAME OVER\n\nFINAL SCORE = {p_point} points\n")
+        continue_flag = False
+
+    #player1 = player2
+
+
 def jersey_number_compare():
     global p_point
     global continue_flag
@@ -29,6 +56,8 @@ def jersey_number_compare():
         print(f"wrong!!! GAME OVER\n\nFINAL SCORE = {p_point} points\n")
         continue_flag = False
 
+country_players = {}
+
 while continue_flag:
     player1 = random.choice(players_DB.player_data)
     player2 = random.choice(players_DB.player_data)
@@ -39,10 +68,10 @@ while continue_flag:
     Aposition = player1["position"]
     Bposition = player2["position"]
 
-    #Acountry = player1["country"]
-    #Bcountry = player2["country"]
-
     Ajersey = player1["Jersey Number"]
     Bjersey = player2["Jersey Number"]
 
-    jersey_number_compare()
+    if game_type == '2':
+        jersey_number_compare()
+    elif game_type == '1':
+        nationality()
