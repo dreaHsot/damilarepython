@@ -1,4 +1,4 @@
-#game art to be deisplayed is here
+#game art to be displayed is here
 
 manchester_city = """ 
  __  __                  _               _               ____ _ _         
