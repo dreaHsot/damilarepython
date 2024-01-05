@@ -39,10 +39,10 @@ def preparation(choice):
             recipe.append(c)
         x = int(input("Enter the index of what you want to add;(0, 1, 2 or 3): "))
         extra = recipe[x]
-        coffee_stock[extra] -= i[extra]
-        prepared_coffee[extra] += i[extra]
-        coffee_recipe.sales += coffee_recipe.price_dict[extra]
-        payment += coffee_recipe.price_dict[extra]
+        coffee_stock[extra] -= 5
+        prepared_coffee[extra] += 5
+        coffee_recipe.sales += (coffee_recipe.price_dict[extra] * 5)
+        payment += (coffee_recipe.price_dict[extra] * 5)
 
         print(f"{choice} coffee prepared with selected extras for a total of {payment}")
 
