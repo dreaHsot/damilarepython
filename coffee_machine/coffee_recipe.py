@@ -80,3 +80,5 @@ stock = {
     "foamed milk" : 100,
     "chocolate" : 100,
 }
+
+sales = 0
