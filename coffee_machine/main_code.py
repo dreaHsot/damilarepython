@@ -26,14 +26,15 @@ def preparation(choice):
             payment = i["price"]
             coffee_recipe.sales += i["price"]
 
-    print(f"{choice} coffee prepared for ${payment}\n\n\n")
+    print(f"{choice} coffee prepared for ${payment}\n")
     qq = input("do you want anything extra?(y/n): ").lower()
 
     if qq == 'n':
+        print("Thank you; you can have your coffee now\n\n\n")
         return prepared_coffee
     elif qq == 'y':
         recipe = []
-        for i, c.keys in enumerate(coffee_stock):
+        for i, c in enumerate(coffee_stock.keys()):
             print(f"{i}: {c}")
             recipe.append(c)
         x = int(input("Enter the index of what you want to add;(0, 1, 2 or 3): "))

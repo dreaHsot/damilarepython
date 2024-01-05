@@ -42,7 +42,7 @@ coffee_list = [
     {
         "name" : "latte machiato",
         "espresso" : 20,
-        "steamed mil k" : 26,
+        "steamed milk" : 26,
         "foamed milk" : 4,
         "chocolate" : 0,
         "price" : 244
