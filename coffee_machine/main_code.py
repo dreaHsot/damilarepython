@@ -7,22 +7,22 @@ def report():
     print(f"\nSales = {coffee_recipe.sales}")
 
 def stock_refill(n):
-    coffee_stock["espresso"] = n
-    coffee_stock["steamed milk"] = n
-    coffee_stock["foamed milk"] = n
-    coffee_stock["chocolate"] = n
-
+    for i in coffee_stock:
+        coffee_stock[i] = n
+    
     print(f"done! stock refilled to {n}ml successfully")
 
 def preparation(choice):
     for i in coffee:
         if i["name"] == choice:
             prepared_coffee = i
-            coffee_stock["espresso"] -= i["espresso"]
-            coffee_stock["steamed milk"] -= i["steamed milk"]
-            coffee_stock["foamed milk"] -= i["foamed milk"]
-            coffee_stock["chocolate"] -= i["chocolate"]
-
+            for j in coffee_stock:
+                if i[j] > coffee_stock[j]:
+                    print("\nInsufficient ingredient; please refill the machine\n")
+                    return
+                else:
+                    coffee_stock[j] -= i[j]
+                    
             payment = i["price"]
             coffee_recipe.sales += i["price"]
 
@@ -44,7 +44,7 @@ def preparation(choice):
         coffee_recipe.sales += (coffee_recipe.price_dict[extra] * 5)
         payment += (coffee_recipe.price_dict[extra] * 5)
 
-        print(f"{choice} coffee prepared with selected extras for a total of {payment}")
+        print(f"{choice} coffee prepared with selected extras for a total of ${payment}")
 
         return prepared_coffee
 
